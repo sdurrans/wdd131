@@ -1,28 +1,40 @@
-body {
-    font-family: Aeial, sans-serif;
+.ex5 .parent {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+    gap: 10px;
+    /* Adds spacing between grid items */
 }
-.header,.footer{
-    background: #333;
-    color: white;
+
+.ex5 header,
+.ex5 .footer {
+    padding: 2rem;
+    grid-column: 1 / 4;
     text-align: center;
-    padding: 20px;
+    background-color: gray;
 }
-.nav{
-    display:flex;
-    background: black;
-    justify-content: space-around;
-    padding: 10px;
-}
-.nav a{
+
+.ex5 .left-side {
+    grid-column: 1 / 2;
+    background-color: blue;
     color: white;
-    text-decoration: none;
+    padding: 1rem;
 }
-.container{
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
+
+.ex5 main {
+    grid-column: 2 / 3;
+    background-color: coral;
+    padding: 1rem;
 }
-.main-content{
-    flex: 2;
-    padding: 20px;
+
+.ex5 .right-side {
+    grid-column: 3 / 4;
+    background-color: yellow;
+    padding: 1rem;
+}
+
+.ex5 .footer {
+    padding: 2rem;
+    grid-column: 1 / 4;
+    background-color: green;
+    color: white;
 }
