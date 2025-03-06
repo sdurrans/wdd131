@@ -1,0 +1,28 @@
+body {
+    font-family: Aeial, sans-serif;
+}
+.header,.footer{
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.nav{
+    display:flex;
+    background: black;
+    justify-content: space-around;
+    padding: 10px;
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.main-content{
+    flex: 2;
+    padding: 20px;
+}
