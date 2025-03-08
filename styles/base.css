@@ -31,7 +31,7 @@ header {
 
 nav {
     background-color: var(--boarders);
-    padding: 10px 0;
+    padding: 10px;
     text-align: center;
 }
 
@@ -41,6 +41,7 @@ nav a {
     font-size: 20px;
     font-weight: bold;
     font-family: var(--font);
+    margin: 0 50px;
 }
 
 nav a:hover {
@@ -48,6 +49,15 @@ nav a:hover {
     background-color: var(--heading-background-color);
     padding: 5px;
     border-radius: 5px;
+}
+
+ul a:hover {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--font);
+    margin: 0 50px;
 }
 
 main {
@@ -66,12 +76,17 @@ h2 {
     font-size: 25px;
     font-weight: bold;
     font-family: var(--font);
+    padding: 10px;
+    margin: 0;
+    height: 50px;
 }
 
 h3 {
     font-size: 20px;
     font-weight: bold;
     font-family: var(--font);
+    padding: 10px;
+    margin: 0;
 }
 
 p {
@@ -86,6 +101,8 @@ p {
     background-color: var(--heading-background-color);
     color: var(--header_title-color);
     text-align: center;
+    padding: 10px;
+    margin: 0;
 }
 
 .card h3 {
@@ -95,6 +112,8 @@ p {
     background-color: var(--heading-background-color);
     color: var(--header_title-color);
     text-align: center;
+    padding: 10px;
+    margin: 0;
 }
 
 .card {
@@ -127,14 +146,13 @@ p {
 }
 
 .profile {
-    width: 100%;
+    width: 60%;
     height: auto;
 }
 
 .flag {
     width: 100%;
     height: auto;
-    
 }
 
 ul {
@@ -150,5 +168,22 @@ li {
     padding: 5px;
     border-radius: 5px;
     margin: 5px;
+    font-weight: bold;
+}
+
+footer {
+    grid-area: footer;
+    background-color: var(--heading-background-color);
+    color: var(--header_title-color);
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid var(--boarders);
+}
+
+#lastModified {
+    color: var(--header_title-color);
+}
+
+footer #currentyear {
     font-weight: bold;
 }
