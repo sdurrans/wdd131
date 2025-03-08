@@ -64,6 +64,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    max-width: auto;
 }
 
 h1 {
