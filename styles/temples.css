@@ -44,14 +44,15 @@ nav a {
 
 nav a:hover {
     background-color: #071094;
-    }
+}
 
 main {
     max-width: 100%;
     margin: 1rem auto;
     padding: 1rem;
 }
-main h1 {
+
+main h2 {
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -92,4 +93,40 @@ footer {
 
 footer p {
     margin: 0.5rem 0;
+}
+
+#hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10;
+}
+
+@media (max-width: 770px) {
+    #hamburger {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #2079ff;
+        position: absolute;
+        top: 4rem;
+        right: 0;
+        width: 100%;
+        padding: 1rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    nav ul.show {
+        display: flex;
+
+    }
 }
