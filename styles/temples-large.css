@@ -1,7 +1,6 @@
-
 @media (min-width: 770px) {
     main {
-        max-width: 1200px;        
+        max-width: 1200px;
         margin: 2rem auto;
     }
 
@@ -25,5 +24,46 @@
 
     figcaption {
         font-size: 1.2rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        position: static;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    .navigation a {
+        padding: 0.5rem 1rem;
+        text-align: center;
+        color: white;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
     }
 }
