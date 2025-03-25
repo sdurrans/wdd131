@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <link rel="stylesheet" href="styles/design.css">
+</head>
+
+<body>
+    <header>
+        <h1>Responsive Images Example</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.jpg" media="(min-width: 768px)">
+                <source srcset="images/hero-medium.jpg" media="(min-width: 480px)">
+                <img src="images/hero-small.jpg" alt="A beautiful responsive hero image">
+            </picture>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+
+</html>
