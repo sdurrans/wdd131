@@ -21,67 +21,51 @@
     <header>
         Niagra Falls
     </header>
-    <Main>
+    <main>
         <div class="hero">
-            <pictures>
+            <picture id="photo">
                 <source srcset="images/hero-large.jpg" media="(min-width: 1000px)">
-                <source srcset="images/hero-medium.jpg" media="(min-width: 500px)">
-                <img src="images/hero-small.jpg" alt="Hero Image">
-            </pictures>
-            <div class="data-content" <h3 class="data-title">Data</h3>
-                <dl>
-                    <dt>
-                        "Area"
-                        ::after
-                    </dt>
-                    <dd>
-                        209.8 km²
-                    </dd>
-                    <dt>
-                        "Population"
-                        ::after
-                    </dt>
-                    <dd>
-                        48,671
-                    </dd>
-                    <dt>
-                        "Country"
-                        ::after
-                    </dt>
-                    <dd>
-                        United States
-                    </dd>
-                    <dt>
-                        "State"
-                        ::after
-                    </dt>
-                    <dd>
-                        New York
-                    </dd>
-                    <dt>
-                        "Language"
-                        ::after
-                    </dt>
-                    <dd>
-                        "Currency"
-                    </dd>
-                    <dt>
-                        "Time Zone"
-                        ::after
-                    </dt>
-                    <dd>
-                        "UTC-5" (EST)
-                    </dd>
-                    <dt>
-                        "Calling Code"
-                        ::after
-                    </dt>
-                    <dd>
-                        +1 716
-                    </dd>
-                </dl>
+                <img src="images/hero-small.jpg" alt="Niagra Falls-Wind Caves">
+            </picture>
+            <div class="data-content">
+                <div id="data">
+                    <h2>Data</h2>
+                    <p><b>Area:</b> 209.8 km²</p>
+                    <p><b>Population:</b> 48,671</p>
+                    <p><b>Country:</b> United States</p>
+                    <p><b>State:</b> New York</p>
+                    <p><b>Language:</b> English</p>
+                    <p><b>Currency:</b> USD</p>
+                    <p><b>Time Zone:</b> UTC-5 (EST)</p>
+                    <p><b>Calling Code:</b> +1 716</p>
+                </div>
+                <div id="weather">
+                    <div id="weather-title">
+                        <h2 id="weather-emoji">Weather</h2>
+                        <picture class="weather-icon">
+                            <img src="images/cloud_sun_icon.svg" alt="Partly cloudy weather icon" width="100"
+                                height="100">
+                        </picture>
+                    </div>
+                    <p>
+                        <b>Temperature: <span id="temperature"></span></b>36 °F
+                    </p>
+                    <p>
+                        <b>Conditions: <span id="conditions"></span></b>Cloudy
+                    </p>
+                    <p>
+                        <b>Wind: <span id="wind"></span></b>17 MPH
+                    </p>
+                    <p>
+                        <b>Wind Chill: </b><span id="wind-chill">10</span> °F
+                    </p>
+                </div>
             </div>
-    </Main>
+    </main>
+    <footer>
+        <p>©<span id="currentYear">2025</span> - Stuart Durrant - South Wales, New York</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>

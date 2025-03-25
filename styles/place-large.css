@@ -1,0 +1,51 @@
+@media (min-width: 1000px) {
+    html {
+        justify-self: center;
+    }
+
+    .weather-icon img {
+        display: none;
+    }
+
+    #weather-emoji::after {
+        content: " ⛅";
+    }
+
+    h2 {
+        margin: 0;
+        padding: 1rem;
+        color: var(--transparent-color);
+        background-color: var(--primary-color);
+    }
+
+    #main-photo img {
+        width: 100%;
+        max-width: 1600px;
+    }
+
+    body {
+        position: relative;
+    }
+
+    #data {
+        color: black;
+        background-color: var(--transparent-color);
+        position: absolute;
+        top: 100px;
+        left: 50px;
+    }
+
+    #weather {
+        position: absolute;
+        top: 400px;
+        right: 50px;
+        max-width: 200px;
+        background-color: var(--transparent-color);
+    }
+
+    #info {
+        display: block;
+        padding: 0;
+    }
+}
+
