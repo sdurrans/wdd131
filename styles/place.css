@@ -15,7 +15,7 @@
 
 html,
 body {
-    max-width: 1600px;
+    max-width: 100%;
     margin: 0;
 }
 
@@ -52,7 +52,7 @@ header {
 #photo img {
     justify-self: center;
     width: 100%;
-    max-width: 980px;
+    max-width: 100%;
     object-fit: cover;
 }
 
