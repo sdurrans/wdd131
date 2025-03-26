@@ -16,6 +16,7 @@
         padding: 1rem;
         color: var(--transparent-color);
         background-color: var(--primary-color);
+        border-radius: 5px;
     }
 
     #main-photo img {
@@ -65,7 +66,8 @@
     #weather {
         position: static;
         max-width: 90%;
-    }
+        
+        }
 }
 
 #photo img {
@@ -95,3 +97,4 @@ footer {
     color: white;
     font-size: 0.9rem;
 }
+
