@@ -1,21 +1,24 @@
+
 :root {
     --primary-color: #07947c;
-    --secondary-color: #064789;
+    --secondary-color: #4a93db;
     --transparent-color: #FFFFFF;
 }
 
+
 * {
-    font-family: 'Lato', sans-serif;
-}
-
-html {
-    max-width: 1600px;
-}
-
-body {
+    font-family: 'Prompt', sans-serif;
     margin: 0;
-    max-width: 1600px;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+html,
+body {
+    max-width: 1600px;
+    margin: 0;
+}
+
 
 h1 {
     text-align: center;
@@ -28,31 +31,56 @@ h1 {
 
 h2 {
     font-size: 30px;
+    text-align: center;
 }
+
+
+header {
+    background-color: var(--secondary-color);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 2rem;
+    font-size: 40px;
+}
+
 
 #photo {
     display: grid;
     grid-template-columns: 1fr;
-
 }
 
 #photo img {
     justify-self: center;
     width: 100%;
     max-width: 980px;
+    object-fit: cover;
 }
 
-#data,
-#weather,
-footer {
-    text-align: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
 
 #data,
 #weather {
+    text-align: center;
     padding: 1rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
+
+.data-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 0.9rem;
+}
+
 
 #info {
     display: flex;
@@ -62,9 +90,7 @@ footer {
     margin: auto;
 }
 
-footer {
-    color: white;
-    background-color: var(--primary-color);
-    padding: 0.5rem;
-    font-size: 20px;
+a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
 }

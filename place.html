@@ -25,45 +25,46 @@
         <div class="hero">
             <picture id="photo">
                 <source srcset="images/hero-large.jpg" media="(min-width: 1000px)">
-                <img src="images/hero-small.jpg" alt="Niagra Falls-Wind Caves">
+                <img src="images/hero-small.jpg" alt="A scenic view of Niagara Falls">
             </picture>
-            <div class="data-content">
-                <div id="data">
-                    <h2>Data</h2>
-                    <p><b>Area:</b> 209.8 km²</p>
-                    <p><b>Population:</b> 48,671</p>
-                    <p><b>Country:</b> United States</p>
-                    <p><b>State:</b> New York</p>
-                    <p><b>Language:</b> English</p>
-                    <p><b>Currency:</b> USD</p>
-                    <p><b>Time Zone:</b> UTC-5 (EST)</p>
-                    <p><b>Calling Code:</b> +1 716</p>
+            
+        </div>
+        <div class="data-content">
+            <section id="data" aria-labelledby="data-title">
+                <h2 id="data-title">Data</h2>
+                <p><b>Area:</b> 209.8 km²</p>
+                <p><b>Population:</b> 48,671</p>
+                <p><b>Country:</b> United States</p>
+                <p><b>State:</b> New York</p>
+                <p><b>Language:</b> English</p>
+                <p><b>Currency:</b> USD</p>
+                <p><b>Time Zone:</b> UTC-5 (EST)</p>
+                <p><b>Calling Code:</b> +1 716</p>
+            </section>
+            <div id="weather">
+                <div id="weather-title">
+                    <h2 id="weather-emoji">Weather</h2>
+                    <picture class="weather-icon">
+                        <img src="images/cloudy.jpg" alt="Partly cloudy weather icon" width="100" height="100">
+                    </picture>
                 </div>
-                <div id="weather">
-                    <div id="weather-title">
-                        <h2 id="weather-emoji">Weather</h2>
-                        <picture class="weather-icon">
-                            <img src="images/cloud_sun_icon.svg" alt="Partly cloudy weather icon" width="100"
-                                height="100">
-                        </picture>
-                    </div>
-                    <p>
-                        <b>Temperature: <span id="temperature"></span></b>36 °F
-                    </p>
-                    <p>
-                        <b>Conditions: <span id="conditions"></span></b>Cloudy
-                    </p>
-                    <p>
-                        <b>Wind: <span id="wind"></span></b>17 MPH
-                    </p>
-                    <p>
-                        <b>Wind Chill: </b><span id="wind-chill">10</span> °F
-                    </p>
-                </div>
+                <p>
+                    <b>Temperature: <span id="temperature"></span></b>36 °F
+                </p>
+                <p>
+                    <b>Conditions: <span id="conditions"></span></b>Cloudy
+                </p>
+                <p>
+                    <b>Wind: <span id="wind"></span></b>17 MPH
+                </p>
+                <p>
+                    <b>Wind Chill: </b><span id="wind-chill">10</span> °F
+                </p>
             </div>
+        </div>
     </main>
     <footer>
-        <p>©<span id="currentYear">2025</span> - Stuart Durrant - South Wales, New York</p>
+        <p>©<span id="currentyear"></span> - Stuart Durrant - South Wales, New York</p>
         <p id="lastModified"></p>
     </footer>
 </body>

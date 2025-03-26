@@ -1,9 +1,8 @@
-
 const currentYear = new Date().getFullYear();
 document.getElementById('currentyear').textContent = currentYear;
 
 const lastModified = document.lastModified;
-document.getElementById('lastModified').textContent = `Last modification: ${lastModified}`;
+document.getElementById('lastModified').textContent = `Last Modified: ${lastModified}`;
 
 const temperature = 6.9;
 const windSpeed = 10.44;
