@@ -59,11 +59,12 @@ main h2 {
 
 #temple-list {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+    justify-content: center;
+
 }
 
-/* Target the new section elements */
 #temple-list section {
     text-align: center;
     background-color: #ffffff;
@@ -72,16 +73,15 @@ main h2 {
     border-radius: 5px;
     box-shadow: 0 2px 4px #0059ff;
     margin-bottom: 1rem;
+    max-width: 400px;
 }
 
-/* Style the images inside the section */
 #temple-list section img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
 }
 
-/* Style the text inside the section */
 #temple-list section h2 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
@@ -89,26 +89,6 @@ main h2 {
 
 #temple-list section p {
     margin: 0.5rem 0;
-    font-weight: bold;
-}
-
-figure {
-    text-align: center;
-    background-color: #ffffff;
-    padding: 1rem;
-    border: 1px solid #000000;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px #0059ff;
-}
-
-figure img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-figcaption {
-    margin-top: 0.5rem;
     font-weight: bold;
 }
 
