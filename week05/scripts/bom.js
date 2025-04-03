@@ -31,3 +31,17 @@ function displayList(item) {
         input.focus();
     });
 }
+
+function setChapterList() {
+    localStorage.setItem('BOMList', JSON.stringify(chaptersArray));
+}
+
+function getChapterList() {
+    return JSON.parse(localStorage.getItem('BOMList'));
+}
+
+function deleteChapter(chapter) {
+    chapter = chapter.slice(0, chapter.length - 1);
+    chaptersArray = chaptersArray.filter(item => item !== chapter);
+    setChapterList();
+}
