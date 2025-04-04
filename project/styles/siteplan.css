@@ -1,0 +1,23 @@
+h2,h1 {
+    color: #030027;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+p {
+    color: #2E428A;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+li {
+    color: #2E428A;
+    font-size: 20px;
+    line-height: 1.5;
+}
+body {
+    background-color: #F2F3D9;
+    font-family: Arial, sans-serif;
+    color: #2E428A;
+}
