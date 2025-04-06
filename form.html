@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131 - Dynamic Web Fundamentals - Stuart Durrant</title>
+    <meta name="description" content="WDD131 - Dynamic Web Fundamentals - Stuart Durrant - Form">
+    <meta name="author" content="Stuart Durrant">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>>
+
+    <header>
+        <h1>Course Proposal</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html" class="wf1">
+            <label>Product Name*
+                <select name="subject" id="Product" required>
+                    <option value="" disabled selected>Select a Product &#9662:</option>
+                </select>
+            </label>
+
+            <fieldset>
+                <legend>Overall Rating</legend>
+
+                <label>☆</label>
+                <input type="radio" id="1star" name="rating" value="1" required>
+                <label>☆☆</label>
+                <input type="radio" id="2star" name="rating" value="2">
+                <label>☆☆☆</label>
+                <input type="radio" id="3star" name="rating" value="3">
+                <label>☆☆☆☆</label>
+                <input type="radio" id="4star" name="rating" value="4">
+                <label>☆☆☆☆☆</label>
+                <input type="radio" id="5star" name="rating" value="5">
+            </fieldset>
+
+            <fieldset>
+                <label>Date of Installation </label>
+                <input type="date" id="installDate" name="installDate" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Which features did you find useful in the product?</legend>
+                <legend>Check all that apply:</legend>
+                <label><input type="checkbox" id="feature-1" name="feature" value="Feature 1"> Durability</label>
+                <label><input type="checkbox" id="feature-2" name="feature" value="Feature 2"> Ease of Use</label>
+                <label><input type="checkbox" id="feature-3" name="feature" value="Feature 3"> Performance</label>
+                <label><input type="checkbox" id="feature-4" name="feature" value="Feature 4"> Design</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Written Review</legend>
+                <textarea name="comments" rows="5" cols="40" placeholder="Enter your comments here..."></textarea>
+            </fieldset>
+
+            <fieldset>
+                <label>Your Name: </label>
+                <input type="text" id="username" name="username">
+            </fieldset>
+
+            <input type="submit" value="Post Review" class="submit-button">
+
+</html>
+
+</body>
