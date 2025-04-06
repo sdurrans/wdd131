@@ -8,7 +8,8 @@
     <meta name="description" content="WDD131 - Dynamic Web Fundamentals - Stuart Durrant - Form">
     <meta name="author" content="Stuart Durrant">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
 </head>
 
 <body>>
@@ -18,26 +19,20 @@
     </header>
 
     <main>
-        <form method="get" action="review.html" class="wf1">
-            <label>Product Name*
-                <select name="subject" id="Product" required>
-                    <option value="" disabled selected>Select a Product &#9662:</option>
+        <form method="get" action="review.html">
+            <label>Product Name
+                <select name="subject" id="product" required>
+                    <option value="" disabled selected>Select a Product:</option>
                 </select>
             </label>
 
-            <fieldset>
-                <legend>Overall Rating</legend>
-
-                <label>☆</label>
-                <input type="radio" id="1star" name="rating" value="1" required>
-                <label>☆☆</label>
-                <input type="radio" id="2star" name="rating" value="2">
-                <label>☆☆☆</label>
-                <input type="radio" id="3star" name="rating" value="3">
-                <label>☆☆☆☆</label>
-                <input type="radio" id="4star" name="rating" value="4">
-                <label>☆☆☆☆☆</label>
-                <input type="radio" id="5star" name="rating" value="5">
+            <fieldset class="rating">
+                <label>Overall Rating</label>
+                <label><input type="radio" id="1star" name="rating" value="1" required>☆</label>
+                <label><input type="radio" id="2star" name="rating" value="2">☆☆</label>
+                <label><input type="radio" id="3star" name="rating" value="3">☆☆☆</label>
+                <label><input type="radio" id="4star" name="rating" value="4">☆☆☆☆</label>
+                <label><input type="radio" id="5star" name="rating" value="5">☆☆☆☆☆</label>
             </fieldset>
 
             <fieldset>
@@ -46,8 +41,8 @@
             </fieldset>
 
             <fieldset>
-                <legend>Which features did you find useful in the product?</legend>
-                <legend>Check all that apply:</legend>
+                <label>Which features did you find useful in the product?</label>
+                <label>Check all that apply:</label>
                 <label><input type="checkbox" id="feature-1" name="feature" value="Feature 1"> Durability</label>
                 <label><input type="checkbox" id="feature-2" name="feature" value="Feature 2"> Ease of Use</label>
                 <label><input type="checkbox" id="feature-3" name="feature" value="Feature 3"> Performance</label>
@@ -55,7 +50,7 @@
             </fieldset>
 
             <fieldset>
-                <legend>Written Review</legend>
+                <label>Written Review</label>
                 <textarea name="comments" rows="5" cols="40" placeholder="Enter your comments here..."></textarea>
             </fieldset>
 
@@ -66,6 +61,10 @@
 
             <input type="submit" value="Post Review" class="submit-button">
 
-</html>
-
+            <footer>
+                <p>©<span id="currentYear">2025</span> - Stuart Durrant - South Wales, New York</p>
+                <p id="lastModified"></p>
+            </footer>
 </body>
+
+</html>
