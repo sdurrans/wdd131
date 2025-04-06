@@ -13,7 +13,6 @@ const products = [
     { id: "jj-1969", name: "warp equalizer", averagerating: 5.0 }
 ];
 
-// Populate the Product Name dropdown
 const productSelect = document.getElementById("product");
 
 products.forEach(product => {
