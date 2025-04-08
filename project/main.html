@@ -7,7 +7,9 @@
     <title>WDD131 - Dynamic Web Fundamentals - Stuart Durrant</title>
     <meta name="description" content="WDD131 - Dynamic Web Fundamentals - Stuart Durrant - Final Project">
     <meta name="author" content="Stuart Durrant">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <script src="scripts/main.js" defer></script>
 </head>
@@ -17,7 +19,6 @@
         <h1>Aerial Estates</h1>
         <nav>
             <a href="main.html">Home</a>
-            <a href="about.html">About</a>
             <a href="portfolio.html">Portfolio</a>
             <a href="contact.html">Contact</a>
         </nav>
@@ -28,41 +29,30 @@
         <div class="hero">
             <picture id="photo">
                 <source srcset="images/medina bird eye.jpg" media="(min-width: 1000px)">
-                <img src="images/medina bird eye.jpg" alt="Birds eye view of Medina">
+                <img src="images/medina bird eye_top crop.jpg" alt="Birds eye view of Medina">
             </picture>
+            <div class="hero-text">
+                <h2>Welcome to Aerial Estates</h2>
+                <p>Your premier destination for stunning aerial photography and videography.</p>
+                <p>Explore our portfolio to see the breathtaking views we capture from above.</p>
+                <p>Contact us today to schedule your aerial shoot!</p>
+            </div>
+            <div class="hero-aboutMe">
+                <h2>About Me</h2>
+                <p>Hi, I'm Stuart Durrant, I am a drone pilot with a passion for flying and capturing stunning visuals from above. Combining my love for photography with the thrill of drone piloting has allowed me to explore unique perspectives and
+                create breathtaking
+                imagery. While I specialize in real estate photography, showcasing properties in their best light, I
+                am also available
+                for any type of aerial photography. Whether it's capturing landscapes, events, or creative projects,
+                I am dedicated to
+                delivering high-quality visuals that exceed expectations.</p>
+            </div>
+
 
         </div>
-        <div class="data-content">
-            <section id="data" aria-labelledby="data-title">
-                <h2 id="data-title">Data</h2>
-                <p><b>Area:</b> 209.8 km²</p>
-                <p><b>Population:</b> 48,671</p>
-                <p><b>Country:</b> United States</p>
-                <p><b>State:</b> New York</p>
-                <p><b>Language:</b> English</p>
-                <p><b>Currency:</b> USD</p>
-                <p><b>Time Zone:</b> UTC-5 (EST)</p>
-                <p><b>Calling Code:</b> +1 716</p>
-            </section>
-            <div id="weather">
-                <div id="weather-title">
-                    <h2 id="weather-emoji">Weather</h2>
-                    <picture class="weather-icon">
-                        <img src="images/cloudy.jpg" alt="Partly cloudy weather icon" width="100" height="100">
-                    </picture>
-                </div>
-                <p>
-                    <b>Temperature: <span id="temperature"></span></b>36 °F
-                </p>
-                <p>
-                    <b>Conditions: <span id="conditions"></span></b>Cloudy
-                </p>
-                <p>
-                    <b>Wind: <span id="wind"></span></b>17 MPH
-                </p>
-                <p>
-                    <b>Wind Chill: </b><span id="wind-chill">10</span> °F
-                </p>
-            </div>
-        </div>
+
+
+
+
+
     </main>

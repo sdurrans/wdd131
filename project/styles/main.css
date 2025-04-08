@@ -14,11 +14,11 @@ body {
 }
 
 header {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: white;
     padding: 1rem;
     text-align: center;
-    display: block
+    display: block;
 }
 
 nav ul {
@@ -38,12 +38,41 @@ nav a {
 nav a:hover {
     background-color: #071094;
 }
+
 .hero {
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
 .hero img {
-    width: 100%;    
+    width: 100%;
+}
+
+.hero-text {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background-color: var(--secondary-color);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 15px 15px var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.hero-aboutMe {
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    background-color: var(--secondary-color);
+    padding: 0px;
+    border-radius: 15px;
+    box-shadow: 15px 15px var(--primary-color);
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
 }
