@@ -1,0 +1,167 @@
+ {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: 'Big Shoulders', sans-serif;
+     line-height: 1.6;
+     background-color: #f9f9f9;
+     color: #333;
+     margin: 0;
+     padding: 0;
+ }
+
+ header {
+     background-color: #0054d1;
+     color: #ffffff;
+     padding: 1rem;
+     text-align: center;
+ }
+
+ header h1 {
+     font-size: 1.8rem;
+     margin-bottom: 0.5rem;
+ }
+
+ nav ul {
+     display: flex;
+     justify-content: center;
+     gap: 1rem;
+     list-style: none;
+     padding: 0;
+ }
+
+ nav a {
+     text-decoration: none;
+     color: white;
+     font-weight: bold;
+     padding: 0.5rem 1rem;
+     border-radius: 5px;
+     transition: background-color 0.3s ease;
+ }
+
+ nav a:hover {
+     background-color: #071094;
+ }
+
+ main {
+     max-width: 100%;
+     margin: 1rem auto;
+     padding: 1rem;
+ }
+
+ main h2 {
+     text-align: center;
+     margin-bottom: 1rem;
+ }
+
+ #temple-list {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 1rem;
+     justify-content: center;
+
+ }
+
+ #temple-list section {
+     text-align: center;
+     background-color: #ffffff;
+     padding: 1rem;
+     border: 1px solid #000000;
+     border-radius: 5px;
+     box-shadow: 0 2px 4px #0059ff;
+     margin-bottom: 1rem;
+     max-width: 400px;
+ }
+
+ #temple-list section img {
+     max-width: 100%;
+     height: auto;
+     border-radius: 5px;
+ }
+
+ #temple-list section h2 {
+     font-size: 1.5rem;
+     margin-bottom: 0.5rem;
+ }
+
+ #temple-list section p {
+     margin: 0.5rem 0;
+     font-weight: bold;
+ }
+
+ footer {
+     background-color: #0054d1;
+     color: #ffffff;
+     text-align: center;
+     padding: 1rem;
+     margin-top: 2rem;
+ }
+
+ footer p {
+     margin: 0.5rem 0;
+ }
+
+ #menu {
+     display: block;
+     font-size: 2rem;
+     font-weight: 700;
+     text-decoration: none;
+     padding: 0.5rem 0.75rem;
+     background-color: #eee;
+     color: #000;
+     border: none;
+     cursor: pointer;
+     position: absolute;
+     top: 1rem;
+     right: 1rem;
+     z-index: 10;
+ }
+
+ #menu::before {
+     content: "≡";
+ }
+
+ #menu.show::before {
+     content: "X";
+ }
+
+ .navigation {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     display: none;
+     flex-direction: column;
+     background-color: #0054d1;
+     position: absolute;
+     top: 4rem;
+     right: 0;
+     width: 100%;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+ }
+
+ .navigation.show {
+     display: flex;
+ }
+
+ .navigation li {
+     margin: 0;
+ }
+
+ .navigation a {
+     display: block;
+     padding: 1rem;
+     text-align: center;
+     text-decoration: none;
+     color: white;
+     font-weight: bold;
+     transition: background-color 0.3s ease;
+ }
+
+ .navigation a:hover {
+     background-color: #071094;
+ }
+
+ *
