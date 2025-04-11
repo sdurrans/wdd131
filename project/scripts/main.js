@@ -52,6 +52,7 @@ function displayPortfolio(items) {
 
 const residentialLink = document.querySelector("#residential");
 const vacationLink = document.querySelector("#vacation");
+const allPicturesLink = document.querySelector("#all-pictures");
 
 residentialLink.addEventListener("click", (e) => {
     e.preventDefault();
@@ -60,6 +61,7 @@ residentialLink.addEventListener("click", (e) => {
 
     residentialLink.classList.add("active");
     vacationLink.classList.remove("active");
+    allPicturesLink.classList.remove("active");
 });
 
 vacationLink.addEventListener("click", (e) => {
@@ -69,7 +71,15 @@ vacationLink.addEventListener("click", (e) => {
 
     vacationLink.classList.add("active");
     residentialLink.classList.remove("active");
+    allPicturesLink.classList.remove("active");
 });
 
+allPicturesLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    displayPortfolio(examples); // Display all portfolio items
+    allPicturesLink.classList.add("active");
+    residentialLink.classList.remove("active");
+    vacationLink.classList.remove("active");
+});
 
 displayPortfolio(examples);
