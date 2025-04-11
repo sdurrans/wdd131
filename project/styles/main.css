@@ -25,7 +25,9 @@ header {
     padding: 1rem;
     text-align: center;
     display: block;
+    
 }
+
 
 nav ul {
     display: flex;
