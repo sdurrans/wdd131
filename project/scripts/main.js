@@ -40,6 +40,7 @@ function displayPortfolio(items) {
 
         img.src = item.imageUrl;
         img.alt = item.alt;
+        img.loading = "lazy";
         figcaption.textContent = item.alt;
 
         figure.appendChild(img);
