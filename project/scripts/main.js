@@ -76,7 +76,7 @@ vacationLink.addEventListener("click", (e) => {
 
 allPicturesLink.addEventListener("click", (e) => {
     e.preventDefault();
-    displayPortfolio(examples); // Display all portfolio items
+    displayPortfolio(examples); 
     allPicturesLink.classList.add("active");
     residentialLink.classList.remove("active");
     vacationLink.classList.remove("active");
